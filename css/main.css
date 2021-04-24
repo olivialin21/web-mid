@@ -3,6 +3,20 @@
   color:#b8b8b8;
 }
 
+@media (min-width: 1600px){ 
+  .container{
+    max-width: 1500px;
+  }
+  .col-xl-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20%;
+    float: left;
+  }
+}
+
 /* nav */
 .nav1{
   background-color: #202023;
@@ -82,7 +96,98 @@ aside .active{
 /* section */
 section{
   min-height: 60vh;
+  padding-top: 30px;
 }
+
+.album-div{
+  display: flex;
+  justify-content: center;
+}
+
+.album-cover{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.album-cover::before{
+  content: "";
+  position: absolute;
+  border: 0.5px solid #c9d0d4;
+  width: 98%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -2px;
+  transition: all 0.2s;
+}
+.album-cover::after{
+	content: "";
+	position: absolute;
+	border: 0.5px solid #afb7bd;
+	width: 95%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: -4px;
+  transition: all 0.2s;
+}
+.album-cover:hover::before{
+  top: -3px;
+}
+.album-cover:hover::after{
+	top: -6px;
+}
+
+.album-cover img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album-cover .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  bottom: 0;
+  box-sizing: border-box;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, rgba(0, 0, 0, 0.8)), color-stop(37%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.album-cover:hover .info{
+  padding-bottom: 50px;
+  transition: all 0.2s;
+}
+
+.album-cover .line{
+  font-size: 20px;
+  color:#FFF;
+}
+
+.album-cover .line2{
+  font-size: 14px;
+}
+
+.album-cover .line3{
+  position: absolute;
+  right: 20px;
+  bottom: -30px;
+  transition: all 0.2s;
+}
+.album-cover:hover .line3{
+  bottom: 10px;
+  transition: all 0.2s;
+}
+
 
 /* footer */
 footer{
