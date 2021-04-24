@@ -1,0 +1,102 @@
+/* common */
+.text-gray{
+  color:#b8b8b8;
+}
+
+/* nav */
+.nav1{
+  background-color: #202023;
+  height: 50px;
+}
+
+.icon-flickr_logo_dots{
+  height: 50px;
+  width: 110px;
+}
+
+.nav1 .navbar-nav .nav-link{
+  color: #FFFFFF;
+}
+
+.fa-search{
+  position: absolute;
+  font-size: 16px;
+  color: #535354;
+  margin-left: 10px;
+}
+
+.fa-cloud-upload{
+  font-size: 24px;
+}
+
+.nav1 form input{
+  padding-left: 30px;
+  background-color: #d0d0d1;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.nav1 .navbar-nav .nav-item-1:hover .dropdown-menu{
+  display: block;
+}
+
+.nav1 .navbar-nav .nav-item-2:hover .dropdown-menu{
+  display: block;
+}
+	
+.nav1 .navbar-nav .nav-item .dropdown-menu::after{
+  content:"";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #FFFFFF transparent;  
+  position: absolute;
+  top: -9px;
+  left: 10px;
+}
+
+/* header */
+header{
+  height: 250px;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+}
+
+.img-user{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* aside */
+aside{
+  border-bottom: 1px solid #dcdcdc;
+}
+
+aside .active{
+  font-weight: bold;
+  border-bottom: 3px solid #0090DC;
+}
+
+/* section */
+section{
+  min-height: 60vh;
+}
+
+/* footer */
+footer{
+  background-color: #212124;
+}
+
+.nav3{
+  border-top: 1px solid #38383a;
+}
+
+.nav3 .nav-link:hover{
+  color:#FFFFFF;
+}
+
+.nav3 .fa{
+  font-size: 20px;
+}
