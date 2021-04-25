@@ -1,5 +1,9 @@
 let albumAry = ['json/110619049.json','json/110719016.json','json/110719030.json','json/110719033.json','json/110719042.json','json/110819013.json','json/110819015.json','json/110819023.json','json/110819042.json'];
 $(document).ready(function() {
+  $('.third-button').on('click', function () {
+    $('.animated-icon3').toggleClass('open');
+  });
+
   let $templateAlbum = $('#template-album');
   for(let i=0;i<albumAry.length;i++){
     let $node = $templateAlbum.html();
