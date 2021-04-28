@@ -195,6 +195,7 @@ nav .text-enter:hover{
 .user-info{
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -287,6 +288,20 @@ nav .text-enter:hover{
   .user-line1{
     justify-content: center;
     margin-bottom: 2px;
+  }
+
+  .user-line2{
+    justify-content: center;
+  }
+}
+
+.user-photoNum{
+  margin-left: auto;
+}
+
+@media (max-width:1100px){
+  .user-photoNum{
+    display: none;
   }
 }
 
@@ -417,11 +432,14 @@ section{
 
 .photo-album-title{
   font-size: 72px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .photo-album-text{
   margin-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
 }
 
 .photo-album-cover .user-img{
@@ -457,6 +475,12 @@ section{
   position: relative;
   width: 100%;
   height: 500px;
+}
+
+@media (min-width:1200px){
+  .photo-album-cover{
+    height: 700px;
+  }
 }
 
 .photo-album-cover img{
@@ -548,7 +572,8 @@ footer{
   background-color: #212124;
 }
 
-.nav3{
+.nav3 .nav-link{
+  color:#FFFFFF99;
   border-top: 1px solid #38383a;
 }
 

@@ -10,7 +10,7 @@ $(document).ready(function() {
   $.get('json/'+jsonID+'.json', function(data) {
 
     $('#album-section').append(
-      '<div class="photo-album-cover col-12"><img src="'+data.imgurl+'" alt=""><div class="info"><div class="photo-album-title">'+data.name+'</div><div class="photo-album-text">'+data.photoNum+' 張相片 ‧ '+data.viewNum+'次檢視</div><div class="photo-album-text"><i class="fa fa-share"></i></div><div><img class="user-img" src="'+data.authorImg+'" alt=""></div><div>相片擁有者：'+data.author+'</div></div>'
+      '<div class="photo-album-cover col-12"><img src="'+data.imgurl+'" alt=""><div class="info"><div class="photo-album-title">'+data.name+'</div><div class="photo-album-text" style="font-style: italic;">'+data.info+'</div><div class="photo-album-text">'+data.photoNum+' 張相片 ‧ '+data.viewNum+'次檢視</div><div class="photo-album-text"><i class="fa fa-share"></i></div><div><img class="user-img" src="'+data.authorImg+'" alt=""></div><div>相片擁有者：'+data.author+'</div></div>'
     );
 
     for(let i=0;i<data.images.length;i++){
