@@ -61,7 +61,6 @@
         <i class="fa fa-cloud-upload text-light ml-3" aria-hidden="true"></i>
         <span class="text-light mx-3 text-enter">登入</span>
         <button class="btn btn-info my-2 my-sm-0 btn-register" type="submit">註冊</button>
-
       </div>
     </nav>
   
@@ -99,7 +98,8 @@
     </aside>
 
     <section class="container">
-      <div id="home-section" class="row">
+      <a href="index.html" class="link-home"><i class="fa fa-arrow-left"></i> 返回相簿清單</a>
+      <div id="album-section" class="row">
 
       </div>
     </section>
@@ -133,21 +133,20 @@
         </nav>
       </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/album.js"></script>
   </body>
-  <template id="template-album" style="display: none">
-    <a href="HREF_HERE" class="album-div col-6 col-md-4 col-xl-3 col-xl-5ths mb-4">
-      <div class="album-cover">
+  <template id="template-photo" style="display: none">
+    <!-- <a class="photo-div col-6"> -->
+      <div class="photo-cover col-6">
         <img src="IMG_HERE" alt="">
         <div class="info">
-          <div class="line line1">TEXT_HERE</div>
-          <div class="line line2">PHOTONUM_HERE 張照片 ‧ VIEWNUM_HERE 次檢視</div>
-          <div class="line line3"><i class="fa fa-share"></i></div>
+          <div class="line line1">TITLE_HERE</div>
+          <div class="line line2">相片擁有者 NAME_HERE</div>
+          <div class="line line3"><i class="fa fa-star-o"></i> STAR_HERE <i class="fa fa-comment-o"></i> MESSAGE_HERE</div>
         </div>
       </div>
-    </a>
+    <!-- </a> -->
   </template>
 </html>

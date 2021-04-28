@@ -102,6 +102,12 @@ nav .text-enter:hover{
   left: 10px;
 }
 
+@media (max-width:576px) {
+  .btn-register{
+    margin-top: 0 !important;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar-collapse {
     position: fixed;
@@ -161,6 +167,12 @@ nav .text-enter:hover{
   height: 250px;
   background-image: url(../images/bg.jpg);
   background-size: cover;
+}
+
+.user{
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
 }
 
 .user-img{
@@ -229,10 +241,20 @@ nav .text-enter:hover{
     height: 170px;
   }
 
+  .user{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   .user-img{
     height: 56px;
     width: 56px;
     border-radius: 50%;
+  }
+
+  .user-line2{
+    margin-bottom: 5px;
   }
 }
 
@@ -360,6 +382,75 @@ section{
     height: 270px;
   }
 }
+
+/* photo */
+.link-home a,a:link,a:visited{
+  text-decoration: none;
+  color:#000;
+}
+
+.photo-div{
+  display: flex;
+  justify-content: center;
+}
+
+.photo-cover{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.photo-cover img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-cover .info {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  bottom: 0;
+  box-sizing: border-box;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, rgba(0, 0, 0, 0.8)), color-stop(37%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.photo-cover:hover .info{
+  display: flex;
+  transition: all 0.2s;
+}
+
+.photo-cover .line{
+  font-size: 14px;
+  color:#FFF;
+}
+
+.photo-cover .line2{
+  font-size: 11px;
+  color: #b6b6b6;
+}
+
+.photo-cover .line3{
+  position: absolute;
+  right: 20px;
+  bottom: -30px;
+  transition: all 0.2s;
+}
+.photo-cover:hover .line3{
+  bottom: 10px;
+  transition: all 0.2s;
+}
+
 
 
 /* footer */
