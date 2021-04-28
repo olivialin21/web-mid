@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Hello, world!</title>
+    <title>Flickr</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg nav1">
@@ -68,7 +68,7 @@
       <div class="container h-100 pb-3">
         <div class="user">
           <div>
-            <img class="user-img" src="https://randomuser.me/api/portraits/women/63.jpg" alt="">
+            <img class="user-img" src="https://live.staticflickr.com/7333/buddyicons/88687934@N06_l.jpg" alt="">
           </div>
           <div class="user-info">
             <div class="d-flex align-items-center user-line1">
@@ -97,10 +97,12 @@
       </div>
     </aside>
 
-    <section class="container">
-      <a href="index.html" class="link-home"><i class="fa fa-arrow-left"></i> 返回相簿清單</a>
-      <div id="album-section" class="row">
-
+    <section class="album-section">
+      <div class="container">
+        <a href="index.html" class="link-home"><i class="fa fa-arrow-left"></i> 返回相簿清單</a>
+        <div id="album-section" class="row album-photos">
+  
+        </div>  
       </div>
     </section>
 
@@ -139,7 +141,7 @@
   </body>
   <template id="template-photo" style="display: none">
     <!-- <a class="photo-div col-6"> -->
-      <div class="photo-cover col-6">
+      <div class="photo-cover col-12 col-lg-6">
         <img src="IMG_HERE" alt="">
         <div class="info">
           <div class="line line1">TITLE_HERE</div>
